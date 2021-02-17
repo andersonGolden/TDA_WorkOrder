@@ -122,68 +122,49 @@ namespace TDADomain.Migrations
                         .HasColumnType("bigint")
                         .UseIdentityColumn();
 
-                    b.Property<int>("BackDetailing")
-                        .HasColumnType("int");
+                    b.Property<string>("BackDetailing")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<long>("ChestPocketId")
-                        .HasColumnType("bigint");
+                    b.Property<string>("ChestPocket")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<long>("CuffId")
-                        .HasColumnType("bigint");
-
-                    b.Property<long?>("CuffsID")
-                        .HasColumnType("bigint");
+                    b.Property<string>("Cuffs")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("DateCreated")
                         .HasColumnType("datetime2");
 
-                    b.Property<long>("EmbroideryId")
-                        .HasColumnType("bigint");
+                    b.Property<string>("Embroidery")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<long>("FlapId")
-                        .HasColumnType("bigint");
+                    b.Property<string>("Flap")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("LastUpdated")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("MeasurementType")
-                        .HasColumnType("int");
+                    b.Property<string>("MeasurementType")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<long>("NeckId")
-                        .HasColumnType("bigint");
+                    b.Property<string>("Neck")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("SidePocket")
-                        .HasColumnType("int");
+                    b.Property<string>("SidePocket")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<long>("SleeveId")
-                        .HasColumnType("bigint");
+                    b.Property<string>("Sleeve")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<long>("StyleId")
-                        .HasColumnType("bigint");
+                    b.Property<string>("Style")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<long>("TrousersId")
-                        .HasColumnType("bigint");
+                    b.Property<string>("Trousers")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Underlay")
-                        .HasColumnType("int");
+                    b.Property<string>("Underlay")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ID");
-
-                    b.HasIndex("ChestPocketId");
-
-                    b.HasIndex("CuffsID");
-
-                    b.HasIndex("EmbroideryId");
-
-                    b.HasIndex("FlapId");
-
-                    b.HasIndex("NeckId");
-
-                    b.HasIndex("SleeveId");
-
-                    b.HasIndex("StyleId");
-
-                    b.HasIndex("TrousersId");
 
                     b.ToTable("Description");
                 });
@@ -237,28 +218,64 @@ namespace TDADomain.Migrations
                         .HasColumnType("bigint")
                         .UseIdentityColumn();
 
-                    b.Property<long>("AgbadaId")
-                        .HasColumnType("bigint");
+                    b.Property<double>("AgbadaLength")
+                        .HasColumnType("float");
+
+                    b.Property<double>("AgbadaWidth")
+                        .HasColumnType("float");
+
+                    b.Property<double>("Back")
+                        .HasColumnType("float");
+
+                    b.Property<double>("Bottom")
+                        .HasColumnType("float");
+
+                    b.Property<double>("Calf")
+                        .HasColumnType("float");
+
+                    b.Property<double>("Chest")
+                        .HasColumnType("float");
 
                     b.Property<DateTime>("DateCreated")
                         .HasColumnType("datetime2");
 
+                    b.Property<double>("Hand")
+                        .HasColumnType("float");
+
+                    b.Property<double>("Head")
+                        .HasColumnType("float");
+
+                    b.Property<double>("Hips")
+                        .HasColumnType("float");
+
                     b.Property<DateTime>("LastUpdated")
                         .HasColumnType("datetime2");
 
-                    b.Property<long>("TopId")
-                        .HasColumnType("bigint");
+                    b.Property<double>("Neck")
+                        .HasColumnType("float");
 
-                    b.Property<long>("TrouserId")
-                        .HasColumnType("bigint");
+                    b.Property<double>("R_S")
+                        .HasColumnType("float");
+
+                    b.Property<double>("Sit")
+                        .HasColumnType("float");
+
+                    b.Property<double>("Stomach")
+                        .HasColumnType("float");
+
+                    b.Property<double>("Thigh")
+                        .HasColumnType("float");
+
+                    b.Property<double>("TopLength")
+                        .HasColumnType("float");
+
+                    b.Property<double>("TrouserLength")
+                        .HasColumnType("float");
+
+                    b.Property<double>("Waist")
+                        .HasColumnType("float");
 
                     b.HasKey("ID");
-
-                    b.HasIndex("AgbadaId");
-
-                    b.HasIndex("TopId");
-
-                    b.HasIndex("TrouserId");
 
                     b.ToTable("Measurements");
                 });
@@ -510,98 +527,6 @@ namespace TDADomain.Migrations
                     b.HasIndex("MeasurementId");
 
                     b.ToTable("WorkOrders");
-                });
-
-            modelBuilder.Entity("TDADomain.DataObjects.Description", b =>
-                {
-                    b.HasOne("TDADomain.DataObjects.ChestPocket", "ChestPocket")
-                        .WithMany()
-                        .HasForeignKey("ChestPocketId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("TDADomain.DataObjects.Cuffs", "Cuffs")
-                        .WithMany()
-                        .HasForeignKey("CuffsID");
-
-                    b.HasOne("TDADomain.DataObjects.Embroidery", "Embroidery")
-                        .WithMany()
-                        .HasForeignKey("EmbroideryId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("TDADomain.DataObjects.Flap", "Flap")
-                        .WithMany()
-                        .HasForeignKey("FlapId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("TDADomain.DataObjects.Neck", "Neck")
-                        .WithMany()
-                        .HasForeignKey("NeckId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("TDADomain.DataObjects.Sleeve", "Sleeve")
-                        .WithMany()
-                        .HasForeignKey("SleeveId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("TDADomain.DataObjects.Style", "Style")
-                        .WithMany()
-                        .HasForeignKey("StyleId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("TDADomain.DataObjects.Trousers", "Trousers")
-                        .WithMany()
-                        .HasForeignKey("TrousersId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("ChestPocket");
-
-                    b.Navigation("Cuffs");
-
-                    b.Navigation("Embroidery");
-
-                    b.Navigation("Flap");
-
-                    b.Navigation("Neck");
-
-                    b.Navigation("Sleeve");
-
-                    b.Navigation("Style");
-
-                    b.Navigation("Trousers");
-                });
-
-            modelBuilder.Entity("TDADomain.DataObjects.Measurement", b =>
-                {
-                    b.HasOne("TDADomain.DataObjects.Agbada", "Agbada")
-                        .WithMany()
-                        .HasForeignKey("AgbadaId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("TDADomain.DataObjects.Top", "Top")
-                        .WithMany()
-                        .HasForeignKey("TopId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("TDADomain.DataObjects.Trouser", "Trouser")
-                        .WithMany()
-                        .HasForeignKey("TrouserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Agbada");
-
-                    b.Navigation("Top");
-
-                    b.Navigation("Trouser");
                 });
 
             modelBuilder.Entity("TDADomain.DataObjects.WorkOrder", b =>

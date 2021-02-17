@@ -1,0 +1,12 @@
+C:\Anderson\MyProjects\TDA_WorkOrder\TDA_WorkOrder\TDADomain\bin\Release\netcoreapp3.1\TDADomain.deps.json
+C:\Anderson\MyProjects\TDA_WorkOrder\TDA_WorkOrder\TDADomain\bin\Release\netcoreapp3.1\TDADomain.runtimeconfig.json
+C:\Anderson\MyProjects\TDA_WorkOrder\TDA_WorkOrder\TDADomain\bin\Release\netcoreapp3.1\TDADomain.runtimeconfig.dev.json
+C:\Anderson\MyProjects\TDA_WorkOrder\TDA_WorkOrder\TDADomain\bin\Release\netcoreapp3.1\TDADomain.dll
+C:\Anderson\MyProjects\TDA_WorkOrder\TDA_WorkOrder\TDADomain\bin\Release\netcoreapp3.1\TDADomain.pdb
+C:\Anderson\MyProjects\TDA_WorkOrder\TDA_WorkOrder\TDADomain\obj\Release\netcoreapp3.1\TDADomain.csprojAssemblyReference.cache
+C:\Anderson\MyProjects\TDA_WorkOrder\TDA_WorkOrder\TDADomain\obj\Release\netcoreapp3.1\TDADomain.AssemblyInfoInputs.cache
+C:\Anderson\MyProjects\TDA_WorkOrder\TDA_WorkOrder\TDADomain\obj\Release\netcoreapp3.1\TDADomain.AssemblyInfo.cs
+C:\Anderson\MyProjects\TDA_WorkOrder\TDA_WorkOrder\TDADomain\obj\Release\netcoreapp3.1\TDADomain.csproj.CoreCompileInputs.cache
+C:\Anderson\MyProjects\TDA_WorkOrder\TDA_WorkOrder\TDADomain\obj\Release\netcoreapp3.1\TDADomain.dll
+C:\Anderson\MyProjects\TDA_WorkOrder\TDA_WorkOrder\TDADomain\obj\Release\netcoreapp3.1\TDADomain.pdb
+C:\Anderson\MyProjects\TDA_WorkOrder\TDA_WorkOrder\TDADomain\obj\Release\netcoreapp3.1\TDADomain.genruntimeconfig.cache

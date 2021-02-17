@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using NLog.Web;
 
 namespace TDAWorkOrderAPI
 {
@@ -13,6 +14,7 @@ namespace TDAWorkOrderAPI
     {
         public static void Main(string[] args)
         {
+            var logger = NLogBuilder.ConfigureNLog("NLog.config").GetCurrentClassLogger();
             CreateHostBuilder(args).Build().Run();
         }
 
@@ -20,7 +22,12 @@ namespace TDAWorkOrderAPI
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseStartup<Startup>();
+                    webBuilder.UseStartup<Startup>()
+                    .ConfigureLogging(logging =>
+                    {
+                        logging.ClearProviders();
+                        logging.SetMinimumLevel(LogLevel.Information);
+                    }).UseNLog();
                 });
     }
 }

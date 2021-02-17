@@ -61,5 +61,15 @@ C:\Anderson\MyProjects\TDA_WorkOrder\TDA_WorkOrder\TDAWorkOrderAPI\bin\Debug\net
 C:\Anderson\MyProjects\TDA_WorkOrder\TDA_WorkOrder\TDAWorkOrderAPI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Anderson\MyProjects\TDA_WorkOrder\TDA_WorkOrder\TDAWorkOrderAPI\bin\Debug\netcoreapp3.1\Humanizer.dll
 C:\Anderson\MyProjects\TDA_WorkOrder\TDA_WorkOrder\TDAWorkOrderAPI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Anderson\MyProjects\TDA_WorkOrder\TDA_WorkOrder\TDAWorkOrderAPI\bin\Debug\netcoreapp3.1\NLog.dll
+C:\Anderson\MyProjects\TDA_WorkOrder\TDA_WorkOrder\TDAWorkOrderAPI\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+C:\Anderson\MyProjects\TDA_WorkOrder\TDA_WorkOrder\TDAWorkOrderAPI\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+C:\Anderson\MyProjects\TDA_WorkOrder\TDA_WorkOrder\TDAWorkOrderAPI\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Anderson\MyProjects\TDA_WorkOrder\TDA_WorkOrder\TDAWorkOrderAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Anderson\MyProjects\TDA_WorkOrder\TDA_WorkOrder\TDAWorkOrderAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Anderson\MyProjects\TDA_WorkOrder\TDA_WorkOrder\TDAWorkOrderAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Anderson\MyProjects\TDA_WorkOrder\TDA_WorkOrder\TDAWorkOrderAPI\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\Anderson\MyProjects\TDA_WorkOrder\TDA_WorkOrder\TDAWorkOrderAPI\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Anderson\MyProjects\TDA_WorkOrder\TDA_WorkOrder\TDAWorkOrderAPI\obj\Debug\netcoreapp3.1\TDAWorkOrderAPI.csproj.CoreCompileInputs.cache
+C:\Anderson\MyProjects\TDA_WorkOrder\TDA_WorkOrder\TDAWorkOrderAPI\obj\Debug\netcoreapp3.1\TDAWorkOrderAPI.MvcApplicationPartsAssemblyInfo.cs
 C:\Anderson\MyProjects\TDA_WorkOrder\TDA_WorkOrder\TDAWorkOrderAPI\obj\Debug\netcoreapp3.1\TDAWorkOrderAPI.MvcApplicationPartsAssemblyInfo.cache

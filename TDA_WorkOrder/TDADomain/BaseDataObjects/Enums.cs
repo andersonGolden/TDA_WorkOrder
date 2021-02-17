@@ -15,7 +15,7 @@ namespace TDADomain.BaseDataObjects
             NOT_TDA
         }
 
-        public enum BackDetailing
+        public enum YesOrNo
         {
             [Description("Yes")]
             Yes = 1,
@@ -35,8 +35,9 @@ namespace TDADomain.BaseDataObjects
 
         public enum WorkOrderStatus
         {
-            New = 0,
-            Completed = 1
+            Both = 0,
+            Pending = 1,
+            Completed = 2
         }
     }
 }
